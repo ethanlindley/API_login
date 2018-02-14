@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd Library/Application\ Support/The\ Legend\ of\ Pirates\ Online/Game/resources/API_login
+chmod u+rx TlopoFrame.jar
+chmod u+rx retrieve_server_data.py
+chmod u+rx authenticate_and_launch.py
+
+python retrieve_server_data.py
+java -jar TlopoFrame.jar
+python authenticate_and_launch.py
