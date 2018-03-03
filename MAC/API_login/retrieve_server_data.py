@@ -9,7 +9,7 @@ with open("./files/selected_account.txt", "w") as sel_user:
 # ------------------------------------------------------------------------------------------
 # Retrieves gameserver data and saves it into a file
 # ------------------------------------------------------------------------------------------
-gameserver_data = (requests.get('https://api.piratesonline.co/shards/')).json()
+gameserver_data = (requests.get('https://api.tlopo.com/shards/')).json()
 servers, server_values = [], {}
 for server in gameserver_data:
     server_name = gameserver_data[server]['name']
