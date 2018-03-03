@@ -34,7 +34,7 @@ params = urllib.parse.urlencode({'username': username.strip(),
                                  'password': password.strip()})
 headers = {'Content-Type': 'application/x-www-form-urlencoded'}
 
-r = requests.post('https://api.piratesonline.co/login/', data=params, headers=headers)
+r = requests.post('https://api.tlopo.com/login/', data=params, headers=headers)
 r = r.json()
 #print(r)
 
